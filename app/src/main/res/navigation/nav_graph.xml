@@ -1,0 +1,18 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/foodFragment">
+
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.meghamlabs.restaurantmanagementadminapp.FoodFragment"
+        android:label="FoodFragment"
+        tools:layout="@layout/fragment_food" />
+
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.meghamlabs.restaurantmanagementadminapp.OrderFragment"
+        android:label="OrderFragment"
+        tools:layout="@layout/fragment_order" />
+
+</navigation>
