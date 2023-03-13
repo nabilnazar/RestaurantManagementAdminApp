@@ -4,16 +4,28 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_margin="12dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/table_number_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Table Number"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:padding="2dp"
-        />
+        <TextView
+            android:id="@+id/table_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Table Number"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Served"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +40,7 @@
          android:textSize="18sp"
         android:text="Food_item"
          android:layout_weight="1"
-        android:textAlignment="center"
+         android:gravity="center"
         />
 
 
