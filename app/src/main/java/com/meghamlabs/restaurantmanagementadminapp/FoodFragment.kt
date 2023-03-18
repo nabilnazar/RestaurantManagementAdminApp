@@ -30,7 +30,7 @@ class FoodFragment : Fragment() {
         sharedPreferences = requireActivity().getSharedPreferences("food_preferences", Context.MODE_PRIVATE)
 
 
-        val foodNames = listOf("Appam", "Dosa", "Puttu", "Fish", "Beef", "Chicken")
+        val foodNames = listOf("Appam", "Dosa", "Puttu", "Fish", "Beef", "Chicken","Pasta","Pizza","Burger","Spaghetti","Noodle","Sandwich","Kimchi","Biriyani","Steak","Prawns")
         val foodItemList = foodNames.mapIndexed { index, name -> FoodItem(index, name, getSharedPreferences().getBoolean(name, false)) }
         foodAdapter = FoodAdapter(foodItemList,this::onFoodItemClicked)
         foodList.adapter = foodAdapter
